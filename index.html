@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تسجيل الطلاب</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>استمارة تسجيل الطلاب</h1>
+      <form id="studentForm">
+        <label>الاسم الكامل</label>
+        <input type="text" name="name" required />
+
+        <label>البريد الإلكتروني</label>
+        <input type="email" name="email" required />
+
+        <label>رقم الهاتف</label>
+        <input type="tel" name="phone" required />
+
+        <label>الدورة</label>
+        <select name="course" required>
+          <option value="">اختر الدورة</option>
+          <option value="Course A">Course A</option>
+          <option value="Course B">Course B</option>
+        </select>
+
+        <button type="submit">تسجيل ودفع</button>
+      </form>
+      <div id="paymentStatus"></div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
